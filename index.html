@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap:  https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+    <script src="components/loader.js"></script>
+    <link rel="icon" href="./favicon.ico">
+</head>
+<body>
+	<header>
+        
+        <h2>
+            池田町
+        </h2>
+	</header>
+    <div id="stage">
+        <div id="photo1" class="pic"><img src="./img/top/unnamed.jpg"></div>
+        <div id="photo2" class="pic"><img src="./img/top/para.jpg"></div>
+        <div id="photo3" class="pic"><img src="./img/top/onsen.jpg"></div>
+        <div id="photo4" class="pic"><img src="./img/top/sakura.jpg"></div>
+        <div id="photo5" class="pic"><img src="./img/top/yuki.jpg"></div>
+        <div style="padding:37%;"></div>
+    </div>
+    <div class="kome">
+        <p1>~”時間”は忘れられます~</p1>
+        <p>心と体を癒してくれるのが岐阜県池田町です</p>
+    </div>
+    <div id="top">
+        <a class="le" href="./ms/mesi.html">ご飯</a>
+        <a href="./ms/mesi.html"><img class="ms" src="./img/mp/yugean.jpg"><br>
+        <a href="./kk/kk.html"><img class="ms1" src="./img/kp/para.jpg" >
+        <a class="migi" href="./kk/kk.html">観光情報</a><br>
+        <a class="left" href="./ij/joho.html">池田町情報</a>
+        <a href="./ij/joho.html"><img class="ms" src="./img/jp/koukou1.jpg" ></a><br>
+    </div>
+    <div id="botan">
+    <a href="https://www.town.gifu-ikeda.lg.jp/" class="btn-social-long-hp">
+        <span>池田町ＨＰ</span>
+    </a>
+    <a href="https://twitter.com/Gifu_Ikeda" class="btn-social-long-twitter">
+        <span>池田町twitter</span>
+    </a>
+    <a href="https://www.facebook.com/Gifuikedasousei" class="btn-social-long-facebook">
+        <span>池田町facebook</span>
+    </a>
+    </div>
+
+    <p id="pageTop"><a href="#"><i class="fa fa-chevron-up "></i></a></p>
+    <style>
+    /*-- CSSの記述 --*/ 
+    #pageTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+    #pageTop i {
+        padding-top: 6px
+    }
+    #pageTop a {
+        display: block;
+        z-index: 999;
+        padding: 8px;
+        border-radius: 30px;
+        width: 35px;
+        height: 35px;
+        background-color: #9FD6D2;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+    }
+    #pageTop a:hover {
+        text-decoration: none;
+        opacity: 0.7;
+    }
+    </style>
+    <script>
+    $(function(){
+        var topBtn=$('#pageTop');
+        topBtn.hide();
+        $(window).scroll(function(){
+            if($(this).scrollTop()>80){
+                topBtn.fadeIn();
+                }else{
+                    topBtn.fadeOut();
+                }
+        });
+        topBtn.click(function(){
+            $('body,html').animate({
+                scrollTop: 0},500);
+                return false;
+        });
+    });
+</script>
+</body>
+</html>
